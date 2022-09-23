@@ -2,10 +2,41 @@
 @{
     ViewData["Title"] = "Clientes";
 }
-<h1>Comentários</h1>
-<a class="btn btn-dark" asp-controller="Clientes" asp-action="Create">Comentar</a>
 
-<table class="table table-responsive table-striped">
+            
+     <p><row>             
+                 <h1>Comentários</h1>                
+                   <a class="btn btn-dark btn-lg btn-block" asp-controller="Clientes" asp-action="Create">Comente aqui!!!</a>
+    </row></p>
+
+
+<div className="d-flex flex-column align-items-center m-3">
+<div class="blocoFeed">
+   @foreach (var cliente in Model){
+
+     
+            <div class="card text-dark bg-light mb-3" style="width:30rem;length:40rem">
+                <div class="card-body">
+
+                    <div>
+                        <row>  
+                <img src= "https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-profile-user-interface-wanicon-lineal-color-wanicon.png"  style="max-width:50px"/>
+                   <a class="btn btn-dark" style="font-size:15px" asp-controller="Clientes" asp-action="Edit" asp-route-id="@cliente.Id">Editar Comentário</a>
+                   </row>
+
+                <h3>@cliente.Titulo</h3>
+                        <h6>Produto: @cliente.Produto</h6>
+                        <p>@cliente.Comentario</p>
+                        <p>Usuário: @cliente.Nome</p>
+                         Avaliação: @cliente.Avaliacao<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/>
+                    </div>
+                
+                </div>
+              </div>
+
+}</div></div>
+<h3>Obrigado!</h3>
+@*<table class="table table-responsive table-striped">
     <thead>
         <tr>
             <th>
@@ -66,4 +97,4 @@
             </tr>
         }
     </tbody>
-</table>
+</table>*@

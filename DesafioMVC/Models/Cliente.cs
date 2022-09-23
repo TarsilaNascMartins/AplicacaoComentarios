@@ -26,7 +26,7 @@ namespace DesafioMVC.Models
 
         [EmailAddress(ErrorMessage ="O email inserido é inválido")]
         public string?Email { get; set; }
-      
+        [Required(ErrorMessage = "A avaliação é obrigatório")]
         public int? Avaliacao { get; set; }
 
     }

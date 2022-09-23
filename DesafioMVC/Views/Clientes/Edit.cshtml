@@ -51,28 +51,28 @@
                     <label asp-for="Comentario" class="control-label"></label>
                         <input asp-for="Comentario" type="text" class="form-control" placeholder="Insira o comentário"/>
                         <span asp-validation-for="Comentario" class="text-danger"></span>
-                </div>*
+                </div>
                
            <ul class="list-group">
                     <li class="list-group-item">
-                    <input class="form-check-input me-1" type="radio" name="Avaliacao" value="1" id="nota1" checked>
-                     <label class="form-check-label"  for="firstRadio">1<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
+                    <input class="form-check-input me-1" type="radio" asp-for="Avaliacao" name="Avaliacao" value="1" id="nota1" checked>
+                     <label class="form-check-label" asp-validation-for="Avaliacao" for="firstRadio">1<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
                       </li>
                      <li class="list-group-item">
                       <input class="form-check-input me-1" input asp-for="Avaliacao" type="radio" name="Avaliacao" value="2" id="nota2">
                      <label class="form-check-label" asp-validation-for="Avaliacao" for="secondRadio">2<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
                      </li>
                      <li class="list-group-item">
-                      <input class="form-check-input me-1" type="radio" name="Avaliacao" value="3" id="nota3">
-                        <label class="form-check-label" for="thirdRadio">3<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/></label>
+                      <input class="form-check-input me-1" type="radio" asp-for="Avaliacao"  name="Avaliacao" value="3" id="nota3">
+                        <label class="form-check-label" asp-validation-for="Avaliacao" for="thirdRadio">3<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/></label>
                          </li>
                          <li class="list-group-item">
-                      <input class="form-check-input me-1" type="radio" name="Avaliacao" value="4" id="nota4">
-                     <label class="form-check-label" for="secondRadio">4<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
+                      <input class="form-check-input me-1" type="radio" asp-for="Avaliacao" name="Avaliacao" value="4" id="nota4">
+                     <label class="form-check-label" asp-validation-for="Avaliacao" for="secondRadio">4<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
                      </li>
                      <li class="list-group-item">
-                      <input class="form-check-input me-1" type="radio" name="Avaliacao" value="5" id="nota5">
-                     <label class="form-check-label" for="secondRadio">5<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
+                      <input class="form-check-input me-1" type="radio" asp-for="Avaliacao" name="Avaliacao" value="5" id="nota5">
+                     <label class="form-check-label" asp-validation-for="Avaliacao" for="secondRadio">5<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
                      </li>
                         </ul>
             <div class="form-group">

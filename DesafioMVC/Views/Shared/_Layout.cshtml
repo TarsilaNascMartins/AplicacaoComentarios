@@ -14,31 +14,27 @@
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #303332;">
           <div class="container-fluid">
-            <a class="navbar-brand"><img src="Assets/Img/logo" class="rounded" style="max-width:120px" ;></a>
+            <a class="navbar-brand"><img src="~/logo.png" class="rounded" style="max-width:120px" ;></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" style="color: #F6FEFF;">Home</a>
+                     <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color: #F6FEFF;">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index" style="color: #F6FEFF;">Clientes</a>
+                  <a class="nav-link" asp-area="" asp-controller="Clientes" asp-action="Index" style="color: #F6FEFF;">Clientes</a>
                 </li>
                   <li class="nav-item">
-                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy" style="color: #F6FEFF;">Privacy</a>
+                 <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" style="color: #F6FEFF;">Privacy</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
-                  <ul>
-                      <li class="nav-item">
-                          <a class="nav-link disabled" style="color: #F6FEFF;" > <a href="Login.html"><img src="/Assets/Img/icons8-user-30.png" alt=""> </a></a>
-                      </li>
-                  </ul>
+                  
             </div>
           </div>
         </nav>
@@ -54,7 +50,7 @@
     <footer class="text-end text-lg-start footer">
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: #303332;;">
-        <div> <h6><a class="" href="Home.html" style="color: #1B5C1D;">automotive.onehundred.com</a></h6> </div>
+        <div> <h6><a class="" asp-controller="Home" asp-action="Index" style="color: #1B5C1D;">automotive.onehundred.com</a></h6> </div>
         <a style="color: #F6FEFF;">Todos os direitos reservados Copyright 2022</a>
       </div>
       
@@ -65,4 +61,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+
 </html>

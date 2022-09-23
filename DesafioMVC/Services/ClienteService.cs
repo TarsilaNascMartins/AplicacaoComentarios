@@ -39,26 +39,7 @@ namespace DesafioMVC.Services
                 return _clienteRepository.Create(cliente);
         }
         public Cliente Edit(Cliente cliente) {
-            if (cliente.Avaliacao == 1)
-            {
-                cliente.Avaliacao = 1;
-            }
-            else if (cliente.Avaliacao == 2)
-            {
-                cliente.Avaliacao = 2;
-            }
-            else if (cliente.Avaliacao == 3)
-            {
-                cliente.Avaliacao = 3;
-            }
-            else if (cliente.Avaliacao == 4)
-            {
-                cliente.Avaliacao = 4;
-            }
-            else
-            {
-                cliente.Avaliacao = 5;
-            }
+            
             cliente.Nome = cliente.Nome?.ToUpper();
             return _clienteRepository.Update(cliente);
         }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wISKlCgU1Glnodn7US+1Id/onc4/bsMpEXDolVLsOk0=",
+  "Hash": "gB3TWLlvyzsmjCo4rUJhfk2DBvTnwLio+PLIK4hO3E8=",
   "Source": "DesafioMVC",
   "BasePath": "_content/DesafioMVC",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tarsi\\source\\repos\\DesafioMVC\\MVC_AvaliacaoComentarios\\DesafioMVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DesafioMVC.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\tarsi\\source\\repos\\DesafioMVC\\MVC_AvaliacaoComentarios\\DesafioMVC\\wwwroot\\Carro_Login.png",
+      "SourceId": "DesafioMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tarsi\\source\\repos\\DesafioMVC\\MVC_AvaliacaoComentarios\\DesafioMVC\\wwwroot\\",
+      "BasePath": "_content/DesafioMVC",
+      "RelativePath": "Carro_Login.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Carro_Login.png"
     },
     {
       "Identity": "C:\\Users\\tarsi\\source\\repos\\DesafioMVC\\MVC_AvaliacaoComentarios\\DesafioMVC\\wwwroot\\css\\site.css",
@@ -1069,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\tarsi\\source\\repos\\DesafioMVC\\MVC_AvaliacaoComentarios\\DesafioMVC\\wwwroot\\logo.png",
+      "SourceId": "DesafioMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tarsi\\source\\repos\\DesafioMVC\\MVC_AvaliacaoComentarios\\DesafioMVC\\wwwroot\\",
+      "BasePath": "_content/DesafioMVC",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
     }
   ]
 }
