@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Cliente>
+@{
+    ViewData["Title"] = "Clientes";
+}
+<h1>Comentários</h1>
+<a class="btn btn-dark" asp-controller="Clientes" asp-action="Create">Comentar</a>
+
+<table class="table table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model=>model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Idade)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model=>model.Produto)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model=>model.Titulo)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model=>model.Comentario)
+            </th>
+         <th>
+                @Html.DisplayNameFor(model=>model.Avaliacao)
+            </th>
+            <th>
+                Opções
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>
+                    @cliente.Id
+                </td>
+                <td>
+                    @cliente.Nome
+                </td>
+                <td>
+                    @cliente.Idade
+                </td>
+                  <td>
+                    @cliente.Produto
+                </td>
+                  <td>
+                    @cliente.Titulo
+                </td>
+                  <td>
+                    @cliente.Comentario
+                </td>
+                 <td>
+                    @cliente.Avaliacao <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/>
+                </td>
+                
+                <td>
+                    <a class="btn btn-dark" asp-controller="Clientes" asp-action="Edit" asp-route-id="@cliente.Id">Editar Comentário</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

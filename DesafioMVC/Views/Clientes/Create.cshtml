@@ -1,0 +1,88 @@
+﻿
+@model  DesafioMVC.Models.Cliente;
+@{
+    ViewData["Title"] = "Create";
+
+    }
+
+<h1>Comentário</h1>
+
+<hr/>
+<div class="row">
+    <div class="mb-3">
+        <form asp-action="Create">
+            <div class="row">
+             <div class="col">
+                <div class="form-group">
+                    <label asp-for="Nome" class="control-label"></label>
+                        <input asp-for="Nome" type="text" class="form-control"/>
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                </div></div>
+                 <div class="col">
+                <div class="form-group">
+                    <label asp-for="Idade" class="control-label"></label>
+                        <input asp-for="Idade" type="number" class="form-control"/>
+                        <span asp-validation-for="Idade" class="text-danger"></span>
+                </div></div>
+                </div>
+
+                  <div class="row">
+                      <div class="col">
+                <div class="form-group">
+                 <label asp-for="Produto" class="control-label"></label>
+                        <input asp-for="Produto" type="text" class="form-control" placeholder="Digite o produto que deseja avaliar"/>
+                        <span asp-validation-for="Produto" class="text-danger"></span>
+
+                </div></div>
+                 <div class="col">
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" type="text" class="form-control"/>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                </div></div></div>
+                
+                  <div class="form-group">
+                    <label asp-for="Titulo" class="control-label"></label>
+                        <input asp-for="Titulo" type="text" class="form-control" placeholder="Insira o título"/>
+                        <span asp-validation-for="Titulo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Comentario" class="control-label"></label>
+                        <input asp-for="Comentario" type="text" class="form-control" placeholder="Insira o comentário"/>
+                        <span asp-validation-for="Comentario" class="text-danger"></span>
+                </div>
+               
+                 
+
+
+
+                   <ul class="list-group">
+                    <li class="list-group-item">
+                    <input class="form-check-input me-1" type="radio" name="Avaliacao" value="1" id="nota1" checked>
+                     <label class="form-check-label"  for="firstRadio">1<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
+                      </li>
+                     <li class="list-group-item">
+                      <input class="form-check-input me-1" input asp-for="Avaliacao" type="radio" name="Avaliacao" value="2" id="nota2">
+                     <label class="form-check-label" asp-validation-for="Avaliacao" for="secondRadio">2<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
+                     </li>
+                     <li class="list-group-item">
+                      <input class="form-check-input me-1" type="radio" name="Avaliacao" value="3" id="nota3">
+                        <label class="form-check-label" for="thirdRadio">3<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png"  style="max-width:20px"/></label>
+                         </li>
+                         <li class="list-group-item">
+                      <input class="form-check-input me-1" type="radio" name="Avaliacao" value="4" id="nota4">
+                     <label class="form-check-label" for="secondRadio">4<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
+                     </li>
+                     <li class="list-group-item">
+                      <input class="form-check-input me-1" type="radio" name="Avaliacao" value="5" id="nota5">
+                     <label class="form-check-label" for="secondRadio">5<img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/><img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="max-width:20px"/></label>
+                     </li>
+                        </ul>
+            <div class="form-group">
+                <input type="submit" value="Enviar Comentário" class="btn btn-dark"></input>
+            </div>
+        </form>
+    </div>
+</div>
+
+                      
